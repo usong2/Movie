@@ -51,7 +51,9 @@ class App extends Component {
     return (
       <div className="App">
         {/* <div className="Movie__Greeting">{this.state.greeting}</div> */}
-        {/* <h1 className={movies ? "App" : "App--loading"}></h1> */}
+        <h1 className={movies ? "App--title" : "App--loading"}>
+          {this.state.greeting}
+        </h1>
         {this.state.movies ? this._renderMovies() : "Loading"}
       </div>
     );
